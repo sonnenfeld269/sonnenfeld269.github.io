@@ -1,0 +1,6 @@
+1. html tree - DONE
+2. grid - mobile - DONE
+3. responsive customziation - major and minor breakpoints - DONE
+4. css customziation
+5. navbar and modals
+6. use js to inject content (string replace and jquery append)

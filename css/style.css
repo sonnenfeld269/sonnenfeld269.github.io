@@ -1,0 +1,165 @@
+/** CUSTOM BREAK-POINTS **/
+
+@media screen and (min-width: 960px) {
+    .container {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    #projects .col-xs-12 {
+        width: 50%;
+    }
+}
+
+/** BODY **/
+
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('./fonts/AmaticSC/AmaticSC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'AmaticSC';
+    font-weight: bold;
+}
+
+h3 {
+  color: brown;
+}
+
+hr {
+    height: 0.1em;
+    background-color: rgba(202, 109, 10, 0.3);
+}
+
+.btn {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+img, video, embed, object {
+    max-width: 100%;
+}
+
+
+/** HEADER **/
+
+.logo {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.logo-img {
+    max-width: 94px;
+    height: auto;
+}
+
+.title {
+    color: rgba(5, 110, 204, 0.8);
+}
+
+.subtitle {
+    color: rgba(202, 109, 10, 0.84);
+}
+
+.transit-slow {
+    -webkit-animation-duration: 4s;
+}
+
+.transit-med {
+    -webkit-animation-duration: 3s;
+}
+
+.transit-fast {
+    -webkit-animation-duration: 2s;
+}
+
+/** NAVBAR **/
+
+.navbar {
+  /**background: #f96e5b;**/
+  background: rgba(202, 109, 10, 0.18);
+  color: rgba(5, 110, 204, 0.8);
+  font-weight: bold;
+}
+
+.navbar-nav>li:hover {
+    border-bottom: 2px solid rgba(230, 127, 9, 0.67);
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+  color: rgba(115, 124, 255, 0.8);
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(82, 87, 150);
+}
+
+/** COVER **/
+
+
+/** CONTENT **/
+
+.content h2 {
+    color: #ada235;
+}
+
+.content img {
+    max-width: 220px;
+}
+
+.glow-img:hover, .glow:active {
+    -moz-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
+    -webkit-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
+    box-shadow: 0px 0px 30px rgba(202, 109, 10, 0.84);
+}
+
+.trick {
+    display: inline-block;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.project-tile {
+  /*border-bottom: 2px solid rgba(202, 109, 10, 0.3);*/
+}
+
+
+/** MODALS **/
+
+.modal-header {
+    border-bottom: 1px solid rgba(165, 42, 42, 0.63);
+}
+
+.modal-header .close {
+    margin-top: -15px;
+}
+
+.custom-close {
+    font-size: 50px;
+    opacity: 0.7;
+    color: rgb(198, 120, 120);
+}
+
+.btn-modal {
+    color: #fff;
+    background-color: rgba(165, 42, 42, 0.63);
+    border-color: brown;
+}
