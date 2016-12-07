@@ -96,6 +96,10 @@ img, video, embed, object {
   font-weight: bold;
 }
 
+.navbar-nav>li {
+    border-bottom: 2px solid rgba(226, 212, 195, 0.67);
+}
+
 .navbar-nav>li:hover {
     border-bottom: 2px solid rgba(230, 127, 9, 0.67);
 }
