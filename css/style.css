@@ -146,6 +146,7 @@ img, video, embed, object {
 }
 
 .cover blockquote {
+    color: darkslateblue;
     vertical-align: middle;
     display: inline-block;
 }
