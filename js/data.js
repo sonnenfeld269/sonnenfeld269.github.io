@@ -34,7 +34,56 @@ var projects = [
     "image" : "ammersfeld-1.png",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
-    "description" : "A biography of Mrs. Ammersfeld. It includes text, images and a music player.",
+    "description" : "A biography of Mrs. Ammersfeld. It includes text, " +
+                    "images and a music player.",
     "link" : "http://www.ammersfeld.at"
+  },
+  {
+    "id" : 4,
+    "title" : "Frankstahl",
+    "subtitle" : "A company website based on php and pimcore cms!",
+    "year" : 2014,
+    "image" : "frankstahl.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "pimcore-cms"],
+    "description" : "An information webpage of an austrian company producing " +
+                    "steel.",
+    "link" : "http://www.frankstahl.at"
+  },
+  {
+    "id" : 5,
+    "title" : "Methmedia",
+    "subtitle" : "A company website based on php and pimcore cms!",
+    "year" : 2014,
+    "image" : "methmedia-2.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "pimcore-cms"],
+    "description" : "An information webpage of an austrian marketing company " +
+                    "showing their products and services.",
+    "link" : "http://www.methmedia.at"
+  },
+  {
+    "id" : 6,
+    "title" : "PxT",
+    "subtitle" : "A company website based on php and pimcore cms!",
+    "year" : 2014,
+    "image" : "pxt.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "pimcore-cms"],
+    "description" : "An information webpage of an austrian architecture " +
+                    "company showing their designs and projects.",
+    "link" : "http://www.pxt.at"
+  },
+  {
+    "id" : 7,
+    "title" : "ACT - Appartment Concern Tracker",
+    "subtitle" : "A java web application for managing living communities.",
+    "year" : 2013,
+    "image" : "act.png",
+    "position" : "Test-Coordinator, Features",
+    "technologies" : ["java", "swing", "java-spring", "sql", "junit"],
+    "description" : "A java project during my study at the university of " +
+                    "technology in vienna",
+    "link" : ""
   }
 ];

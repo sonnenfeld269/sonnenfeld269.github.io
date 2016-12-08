@@ -60,7 +60,7 @@ h3 {
 
 hr {
     height: 0.1em;
-    background-color: rgba(202, 109, 10, 0.3);
+    background: rgba(202, 109, 10, 0.3);
 }
 
 .btn {
@@ -165,7 +165,7 @@ img, video, embed, object {
 }
 
 .project-tile {
-    /*border-bottom: 2px solid rgba(202, 109, 10, 0.3);*/
+    margin: 0 0 24px 0;
 }
 
 

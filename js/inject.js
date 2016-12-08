@@ -35,7 +35,13 @@ function inject(htmlString) {
             resultString = resultString.replace("%description%", projects[index].description);
         }
         if (htmlString.includes("%link%")) {
-            resultString = resultString.replace("%link%", projects[index].link);
+            if (projects[index].link != "") {
+                resultString = resultString.replace("%link%", projects[index].link);
+                resultString = resultString.replace("%linkText%", "Link to project");
+            } else {
+                resultString = resultString.replace("%link%", "javascript: void(0)");
+                resultString = resultString.replace("%linkText%", "No link available");
+            }
         }
         if (htmlString.includes("%icon%")) {
             if (projects[index].link.includes("github")) {
@@ -51,37 +57,47 @@ function inject(htmlString) {
 }
 
 var project = `<div class="project-tile col-xs-12 col-sm-4">
-    <img class="glow-img img-responsive" src="./images/projects/%image%" data-toggle="modal" data-target="#project%id%">
-    <h3>%title% (%year%)</h3>
-    <p><a href="%link%"><i class="fa fa-%icon%" aria-hidden="true"></i> Link to project</a></p>
-</div>`;
+                  <img class="glow-img img-responsive"
+                  src="./images/projects/%image%" data-toggle="modal"
+                  data-target="#project%id%">
+                  <h3>%title% (%year%)</h3>
+                  <p>
+                    <a target="_blank" href="%link%"><i class="fa fa-%icon%"
+                  aria-hidden="true"></i> %linkText%</a>
+                  </p>
+                </div>`;
 
-var modal = `<div class="modal fade" id="project%id%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="container">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title title" id="myModalLabel">%title% (%year%)</h2>
-                    <h3 class="subtitle">%subtitle%</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <img class="img-responsive" src="./images/projects/%image%">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3>%position%, Technologies: %technologies% </h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p>%description%</p>
-                        </div>
+var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
+             role="dialog" aria-labelledby="myModalLabel">
+             <div class="container">
+             <div class="modal-dialog" role="document">
+             <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close custom-close"
+                data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h2 class="modal-title title" id="myModalLabel">%title%
+                (%year%)</h2>
+                <h3 class="subtitle">%subtitle%</h3>
+             </div>
+             <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <img class="img-responsive" src="./images/projects/%image%">
                     </div>
                 </div>
+             <div class="row">
+                <div class="col-xs-12">
+                  <h3>%position%, Technologies: %technologies% </h3>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-xs-12">
+                  <p>%description%</p>
+                </div>
+             </div>
+             </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
                 </div>
