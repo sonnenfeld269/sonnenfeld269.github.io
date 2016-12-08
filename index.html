@@ -12,6 +12,8 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.arctext.js"></script>
     <script src="./js/portfolio.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/inject.js"></script>
     <link href="./css/animate.css" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -19,168 +21,88 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="row header">
             <div class="col-sm-6 col-md-6 col-lg-6 logo text-center text-uppercase">
                 <h1 class="hidden-xs title arcUp transit-slow animated bounceInDown">Sonnenfeld Coding Lab</h1>
                 <h2 class="visible-xs title arcUp transit-slow">Sonnenfeld Coding Lab</h2>
-                <img class="logo-img transit-med animated bounceInDown" src="images/sun-logo.png">
+                <img class="logo-img transit-med animated bounceInDown" alt="Sun Logo" src="images/sun-logo.png">
                 <h2 class="hidden-xs title arcDown transit-fast animated bounceInUp">coding for the world!</h2>
                 <h3 class="visible-xs title arcDown transit-fast">coding for the world!</h3>
             </div>
             <div class="col-sm-6">
-                <nav class="navbar navbar-default navbar-static-top">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#about-me">about me</a></li>
-                            <li><a href="#projects">projects</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav center-block text-center">
+                                <li><a href="#about-me">about me</a></li>
+                                <li><a href="#projects">projects</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <hr />
-            </div>
-        </div>
+        <hr />
 
         <div class="row">
             <div class="col-xs-12 col-md-12">
-                <img class="img-responsive center-block" src="./images/cover2.jpg">
+                <img class="img-responsive center-block" alt="Cover Image" src="./images/cover2.jpg">
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <hr />
-            </div>
-        </div>
+        <hr />
         <div class="content">
             <section id="about-me">
-                <h2>About me :-)</h2>
-                <p>
-                    I'm Dave! What I love is creating! And I want to create something for you!
-                </p>
-                <p>
-                    First of all, I am friendly! I have never beaten someone up. I also don't curse around. In the supermarket for example. If there is a long queue of people, I stay calm. I don't hit anyone!
-                </p>
-                <p>Further I love ideas! And I feel great when ideas come to reality!</p>
-                <p>
-                    I am patient! I can do little things for hours. But if it takes me 3 days to do a little
-                    <h3 class="trick">css trick</h3> then I will get nervous!
-                </p>
-                <p>Creativity and Compassion is what energizes me! Developing Webapps in a globalised world is one of the most necessary things you can do these days!</p>
-                <p>
-                    Challenges can be big, but together we can do it! Let's build a future of sharing!
-                </p>
-            </section>
-            <div class="row">
-                <div class="col-xs-12">
-                    <hr />
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="test" style="background: orange">
+                        </div>
+                        <h2>About me :-)</h2>
+                        <p>
+                            I'm Dave! What I love is creating! And I want to create something for you!
+                        </p>
+                        <p>
+                            First of all, I am friendly! I have never beaten someone up. I also don't curse around. In the supermarket for example. If there is a long queue of people, I stay calm. I don't hit anyone!
+                        </p>
+                        <p>Further I love ideas! And I feel great when ideas come to reality!</p>
+                        <p>
+                            I am patient! I can do little things for hours. But if it takes me 3 days to do a little css trick then I will get nervous!
+                        </p>
+                        <p>Creativity and Compassion is what energizes me! Developing Webapps in a globalised world is one of the most necessary things you can do these days!</p>
+                        <p>
+                            Let's live the challenges, experiment with them, live them and face them!
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <hr />
             <section id="projects">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xs-12 col-md-12">
                         <h2>Projects</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="project-tile col-xs-12 col-sm-4">
-                        <img class="glow-img img-responsive" src="./images/projects/movie-trailer.png" data-toggle="modal" data-target="#project1">
-                        <h3>Movie Database (2016)</h3>
-                        <p><a href="https://github.com/sonnenfeld269/movie-trailer-website"><i class="fa fa-github" aria-hidden="true"></i> Link to project</a></p>
-                    </div>
-                    <div class="project-tile col-xs-12 col-sm-4">
-                        <img class="glow-img img-responsive" src="./images/projects/museum-app-1.png" data-toggle="modal" data-target="#project2">
-                        <h3>Museum Webapplication (2016)</h3>
-                        <p><a href="https://github.com/sonnenfeld269/movie-trailer-website"><i class="fa fa-github" aria-hidden="true"></i> Link to project</a></p>
-                    </div>
+                    <div class="projectview"></div>
                 </div>
             </section>
-
         </div>
     </div>
 
     <!-- MODALS -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="container">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title title" id="myModalLabel">Movie Database</h2>
-                        <h3 class="subtitle">A little database of my favorite movies!</h3>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <img class="img-responsive" src="./images/projects/movie-trailer.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h3>2016, Front -and Backend Development, Technologies: html, css, python </h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modalview"></div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="container">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title title" id="myModalLabel">Museum Webapplication!</h2>
-                        <h3 class="subtitle">A front-end webapplication for a museum using json as data and bootstrap</h3>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <img class="img-responsive" src="./images/projects/museum-app-1.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h3>2016, Frontend Development, Technologies: html, css, angular-js </h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

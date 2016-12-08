@@ -1,3 +1,6 @@
+/*
+  Here are some jquery functions that will be called to animate our index.html
+*/
 $(document).ready(function() {
 
     $(".arcUp").arctext({radius: 600});

@@ -1,0 +1,40 @@
+var projects = [
+  {
+    "id" : 1,
+    "title" : "Movie Library",
+    "subtitle" : "A little database of my favorite movies!",
+    "year" : 2016,
+    "image" : "movie-trailer.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "python"],
+    "description" : "This is my project that I created during a wonderful " +
+                    "udacity class. It is a little movie library showing my " +
+                    "favorite movies.",
+    "link" : "https://github.com/sonnenfeld269/movie-trailer-website"
+  },
+  {
+    "id" : 2,
+    "title" : "Museum Frontend Database",
+    "subtitle" : "A front-end webapplication for a museum using json as data " +
+                 "and bootstrap.",
+    "year" : 2016,
+    "image" : "museum-app.png",
+    "position" : "Frontend Development",
+    "technologies" : ["html", "css", "angular-js"],
+    "description" : "This is a database that I created for a " +
+                    "museum with Angular JS. It has two tables filled with " +
+                    "json data, and different filters for sorting.",
+    "link" : "https://github.com/sonnenfeld269/museum-web-app.git"
+  },
+  {
+    "id" : 3,
+    "title" : "Ammersfeld",
+    "subtitle" : "A personal website based on php and pimcore cms!",
+    "year" : 2014,
+    "image" : "ammersfeld-1.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "pimcore-cms"],
+    "description" : "A biography of Mrs. Ammersfeld. It includes text, images and a music player.",
+    "link" : "http://www.ammersfeld.at"
+  }
+];

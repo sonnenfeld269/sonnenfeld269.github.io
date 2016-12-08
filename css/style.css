@@ -8,11 +8,28 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 30px;
+    }
+
+    .navbar-nav {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 10px;
+    }
+}
+
 @media screen and (min-width: 500px) and (max-width: 768px) {
     #projects .col-xs-12 {
         width: 50%;
     }
 }
+
 
 /** BODY **/
 
@@ -32,16 +49,13 @@ body {
     font-size: 18px;
 }
 
-.container {
-
-}
 h1, h2, h3, h4, h5 {
     font-family: 'AmaticSC';
     font-weight: bold;
 }
 
 h3 {
-  color: brown;
+    color: brown;
 }
 
 hr {
@@ -91,16 +105,20 @@ img, video, embed, object {
     -webkit-animation-duration: 2s;
 }
 
+
 /** NAVBAR **/
 
 .navbar {
-  /**background: #f96e5b;**/
-  color: rgba(5, 110, 204, 0.8);
-  font-weight: bold;
+    color: rgba(5, 110, 204, 0.8);
+    font-weight: bold;
+}
+
+.navbar-nav {
+    float: right;
 }
 
 .navbar-nav>li {
-    border-bottom: 2px solid rgba(226, 212, 195, 0.67);
+    border-bottom: 1px solid rgba(226, 212, 195, 0.67);
 }
 
 .navbar-nav>li:hover {
@@ -108,16 +126,18 @@ img, video, embed, object {
 }
 
 .navbar-default {
-  background: azure;
-  border-color: #fff;
+    background: azure;
+    border-color: #fff;
 }
+
 .navbar-default .navbar-nav>li>a {
-  color: rgba(115, 124, 255, 0.8);
+    color: rgba(115, 124, 255, 0.8);
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: rgb(82, 87, 150);
+    color: rgb(82, 87, 150);
 }
+
 
 /** COVER **/
 
@@ -133,9 +153,9 @@ img, video, embed, object {
 }
 
 .glow-img:hover, .glow:active {
-    -moz-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
-    -webkit-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
-    box-shadow: 0px 0px 30px rgba(202, 109, 10, 0.84);
+  -moz-box-shadow: 0 0 30px rgba(202,109,10,0.84);
+  -webkit-box-shadow: 0 0 30px rgba(202,109,10,0.84);
+  box-shadow: 0px 0px 30px rgba(202,109,10,0.84);
 }
 
 .trick {
@@ -145,7 +165,7 @@ img, video, embed, object {
 }
 
 .project-tile {
-  /*border-bottom: 2px solid rgba(202, 109, 10, 0.3);*/
+    /*border-bottom: 2px solid rgba(202, 109, 10, 0.3);*/
 }
 
 
