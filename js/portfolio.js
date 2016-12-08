@@ -13,9 +13,14 @@ $(document).ready(function() {
         $(this).removeClass('animated bounce')
     });
 
-    $('.nav li').hover(function() {
-        $(this).addClass('animated bounce')
-    }, function() {
-        $(this).removeClass('animated bounce')
+    // making a smooth scrolling
+    $(".navbar ul li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1200, function() {
+            window.location.hash = this.hash;
+        });
     });
 });

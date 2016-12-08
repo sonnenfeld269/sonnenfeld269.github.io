@@ -12,9 +12,8 @@
     body {
         padding-top: 30px;
     }
-
     .navbar-nav {
-      width: 100%;
+        width: 100%;
     }
 }
 
@@ -25,7 +24,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
-    #projects .col-xs-12 {
+    #projects .project-tile {
         width: 50%;
     }
 }
@@ -141,6 +140,16 @@ img, video, embed, object {
 
 /** COVER **/
 
+.cover {
+    height: 320px;
+    padding: 90px 0 0 0;
+}
+
+.cover blockquote {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 
 /** CONTENT **/
 
@@ -153,9 +162,9 @@ img, video, embed, object {
 }
 
 .glow-img:hover, .glow:active {
-  -moz-box-shadow: 0 0 30px rgba(202,109,10,0.84);
-  -webkit-box-shadow: 0 0 30px rgba(202,109,10,0.84);
-  box-shadow: 0px 0px 30px rgba(202,109,10,0.84);
+    -moz-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
+    -webkit-box-shadow: 0 0 30px rgba(202, 109, 10, 0.84);
+    box-shadow: 0px 0px 30px rgba(202, 109, 10, 0.84);
 }
 
 .trick {
