@@ -4,7 +4,7 @@ var projects = [
     "title" : "Movie Library",
     "subtitle" : "A little database of my favorite movies!",
     "year" : 2016,
-    "image" : "movie-trailer.png",
+    "image" : "movie-trailer.jpg",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "python"],
     "description" : "This is my project that I created during a wonderful " +
@@ -31,7 +31,7 @@ var projects = [
     "title" : "Ammersfeld",
     "subtitle" : "A personal website based on php and pimcore cms!",
     "year" : 2014,
-    "image" : "ammersfeld-1.png",
+    "image" : "ammersfeld-1.jpg",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
     "description" : "A biography of Mrs. Ammersfeld. It includes text, " +
@@ -43,7 +43,7 @@ var projects = [
     "title" : "Frankstahl",
     "subtitle" : "A company website based on php and pimcore cms!",
     "year" : 2014,
-    "image" : "frankstahl.png",
+    "image" : "frankstahl.jpg",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
     "description" : "An information webpage of an austrian company producing " +
@@ -55,7 +55,7 @@ var projects = [
     "title" : "Methmedia",
     "subtitle" : "A company website based on php and pimcore cms!",
     "year" : 2014,
-    "image" : "methmedia-2.png",
+    "image" : "methmedia-2.jpg",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
     "description" : "An information webpage of an austrian marketing company " +
@@ -67,7 +67,7 @@ var projects = [
     "title" : "PxT",
     "subtitle" : "A company website based on php and pimcore cms!",
     "year" : 2014,
-    "image" : "pxt.png",
+    "image" : "pxt.jpg",
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
     "description" : "An information webpage of an austrian architecture " +

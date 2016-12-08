@@ -56,7 +56,7 @@ function inject(htmlString) {
     return resultArray.join("\n");
 }
 
-var project = `<div class="project-tile col-xs-12 col-sm-4">
+var project = `<div class="project-tile col-xs-12 col-sm-4 col-lg-3">
                   <img class="glow-img img-responsive"
                   src="./images/projects/%image%" data-toggle="modal"
                   data-target="#project%id%">
