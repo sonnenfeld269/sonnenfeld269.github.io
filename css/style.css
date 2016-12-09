@@ -1,10 +1,25 @@
 /** CUSTOM BREAK-POINTS **/
 
+@media screen and (min-width: 600px) {
+    .cover {
+      min-height: 12em;
+    }
+}
+
 @media screen and (min-width: 960px) {
     .container {
         width: 960px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .cover {
+      min-height: 24em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 10px;
     }
 }
 
@@ -14,12 +29,6 @@
     }
     .navbar-nav {
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        padding-top: 10px;
     }
 }
 
@@ -71,6 +80,14 @@ img, video, embed, object {
     max-width: 100%;
 }
 
+a {
+    color: rgba(9, 13, 130, 0.66);
+}
+
+a:hover {
+  color: rgba(208, 93, 12, 0.85);
+  text-decoration: none;
+}
 
 /** HEADER **/
 
@@ -141,16 +158,20 @@ img, video, embed, object {
 /** COVER **/
 
 .cover {
-    height: 320px;
-    padding: 90px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cover blockquote {
+.quote {
+  max-width: 50%;
+}
+
+blockquote {
     color: cornflowerblue;
-    vertical-align: middle;
-    display: inline-block;
     border-left: 5px solid hsla(55, 88%, 38%, 0.49);
 }
+
 
 /** CONTENT **/
 
@@ -175,13 +196,21 @@ img, video, embed, object {
 }
 
 .projectview {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .project-tile {
     margin: 0 0 24px 0;
 }
 
+.content img {
+  border: 3px solid azure;
+}
+
+.content img:hover {
+  border: 0px;
+}
 
 /** MODALS **/
 
