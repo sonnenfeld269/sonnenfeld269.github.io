@@ -3,6 +3,18 @@
   and injects the data into the html strings.
 */
 
+/**
+* function : inject
+*   the function takes an html string and injects content from json into it by
+*   looping through the data and storing the results in an array
+*
+* Parameters
+*   htmlString : string - an html string like a modal or div
+*
+* Return
+*   resultArray.join : string - returns a string, which was converted from an
+*                               array
+*/
 function inject(htmlString) {
 
     var resultArray = [];
@@ -106,6 +118,9 @@ var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
     </div>
 </div>`;
 
+/**
+* the html tag will be selected and the formatted content will be appended to them.
+*/
 $(document).ready(function() {
     $(".projectview").append(inject(project));
     $(".modalview").append(inject(modal));

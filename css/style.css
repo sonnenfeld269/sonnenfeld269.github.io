@@ -157,6 +157,7 @@ a:hover {
 
 /** COVER **/
 
+/* using css flex to align div inside .cover vertically */
 .cover {
   display: flex;
   align-items: center;
