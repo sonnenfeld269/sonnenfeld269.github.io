@@ -6,5 +6,4 @@
 6. use js to inject content (string replace and jquery append)
 
 problems
-- tablet view not really responsive - why?
 - how to use custom media queries with bootstrap? did i do it right?

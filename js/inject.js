@@ -1,8 +1,3 @@
-/*
-  This is our inject file. It parses through our data, which is stored in data.js
-  and injects the data into the html strings.
-*/
-
 /**
 * function : inject
 *   the function takes an html string and injects content from json into it by
