@@ -96,5 +96,27 @@ var projects = [
     "technologies" : ["html5", "css3", "javascript", "jquery"],
     "description" : "Get description",
     "link" : "https://sonnenfeld269.github.io/"
+  },
+  {
+    "id" : 9,
+    "title" : "Multi User Blog",
+    "subtitle" : "Get description from udacity",
+    "year" : 2017,
+    "image" : "",
+    "position" : "Backend Development",
+    "technologies" : ["google app engine", "python", "ajax"],
+    "description" : "Get description",
+    "link" : "https://github.com/sonnenfeld269/multi-user-blog"
+  },
+  {
+    "id" : 10,
+    "title" : "Tournament Results",
+    "subtitle" : "Get description from udacity",
+    "year" : 2017,
+    "image" : "",
+    "position" : "Backend Development",
+    "technologies" : ["postgre-sql", "python"],
+    "description" : "Get description",
+    "link" : "https://github.com/sonnenfeld269/swiss-tournament-db"
   }
 ];
