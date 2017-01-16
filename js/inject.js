@@ -15,6 +15,11 @@ function inject(htmlString) {
     var resultArray = [];
     var resultString = "";
 
+    // sort projects by year
+    projects.sort(function(a, b) {
+        return b.year - a.year
+    });
+
     for (index in projects) {
 
         if (htmlString.includes("%id%")) {
@@ -59,7 +64,6 @@ function inject(htmlString) {
         }
         resultArray.push(resultString);
     }
-
     return resultArray.join("\n");
 }
 

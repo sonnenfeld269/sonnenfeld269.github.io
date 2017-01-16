@@ -85,5 +85,16 @@ var projects = [
     "description" : "A java project during my study at the university of " +
                     "technology in vienna",
     "link" : ""
+  },
+  {
+    "id" : 8,
+    "title" : "Personal Portfolio",
+    "subtitle" : "Get description from udacity",
+    "year" : 2017,
+    "image" : "portfolio.png",
+    "position" : "Frontend Development",
+    "technologies" : ["html5", "css3", "javascript", "jquery"],
+    "description" : "Get description",
+    "link" : "https://sonnenfeld269.github.io/"
   }
 ];
