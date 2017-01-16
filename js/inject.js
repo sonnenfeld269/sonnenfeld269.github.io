@@ -35,7 +35,11 @@ function inject(htmlString) {
             resultString = resultString.replace("%year%", projects[index].year);
         }
         if (htmlString.includes("%image%")) {
-            resultString = resultString.replace("%image%", projects[index].image);
+            if(projects[index].image) {
+              resultString = resultString.replace("%image%", projects[index].image);
+            } else {
+              resultString = resultString.replace("%image%", "placeholder.png");
+            }
         }
         if (htmlString.includes("%position%")) {
             resultString = resultString.replace("%position%", projects[index].position);
