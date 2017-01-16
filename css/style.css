@@ -51,9 +51,14 @@
     src: url('./fonts/Raleway/Raleway-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url('./fonts/Open Sans Condensed/OpenSans-CondLight.ttf') format('truetype');
+}
+
 body {
     background: #fff;
-    font-family: "Raleway";
+    font-family: "Open Sans Condensed";
     font-size: 18px;
 }
 
@@ -125,6 +130,14 @@ a:hover {
 
 /** NAVBAR **/
 
+.nav-title {
+    font-size: 25px;
+}
+
+.nav-image {
+    max-width: 35px;
+}
+
 .navbar {
     color: #f4f4ef;
     font-weight: bold;
@@ -142,9 +155,16 @@ a:hover {
     border-bottom: 2px solid rgba(230, 127, 9, 0.67);
 }
 
-.navbar-default {
-    background: azure;
-    border-color: #fff;
+.navbar-custom {
+    padding: 0 0 12px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: azure;
+    max-height: 100%;
+    overflow-y: auto;
+    letter-spacing: 1px;
 }
 
 .navbar-default .navbar-nav>li>a {
