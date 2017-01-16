@@ -51,7 +51,7 @@ function inject(htmlString) {
             resultString = resultString.replace("%description%", projects[index].description);
         }
         if (htmlString.includes("%link%")) {
-            if (projects[index].link != "") {
+            if (projects[index].link) {
                 resultString = resultString.replace("%link%", projects[index].link);
                 resultString = resultString.replace("%linkText%", "Link to project");
             } else {
