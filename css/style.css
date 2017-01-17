@@ -138,6 +138,14 @@ img, video, embed, object {
     letter-spacing: 1px;
 }
 
+.navbar-custom .navbar-toggle {
+  border-color: orange;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: cornflowerblue;
+}
+
 .navbar-custom a {
     color: cornflowerblue;
 }
