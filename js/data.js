@@ -118,5 +118,17 @@ var projects = [
     "technologies" : ["postgre-sql", "python"],
     "description" : "Get description",
     "link" : "https://github.com/sonnenfeld269/swiss-tournament-db"
+  },
+  {
+    "id" : 11,
+    "title" : "Spurensuche Turkestan",
+    "subtitle" : "Auf der Suche nach Kriegsgefangenen in Turkestan.",
+    "year" : 2015,
+    "image" : "turkestan.png",
+    "position" : "Backend Development",
+    "technologies" : ["wordpress", "css"],
+    "description" : "A website about austrian war prisoners in turkestan.",
+    "link" : "http://www.spurensuche-turkestan.org/"
   }
+
 ];
