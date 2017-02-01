@@ -89,23 +89,29 @@ var projects = [
   {
     "id" : 8,
     "title" : "Personal Portfolio",
-    "subtitle" : "Get description from udacity",
+    "subtitle" : "A frontend portfolio of my projects.",
     "year" : 2017,
     "image" : "portfolio.png",
     "position" : "Frontend Development",
     "technologies" : ["html5", "css3", "javascript", "jquery"],
-    "description" : "Get description",
+    "description" : "Developed a personal portfolio page using HTML, CSS, and" +
+        " the Bootstrap framework. The page is fully responsive and" +
+        " works on mobile, tablet, and desktop browsers.",
     "link" : "https://sonnenfeld269.github.io/"
   },
   {
     "id" : 9,
     "title" : "Multi User Blog",
-    "subtitle" : "Get description from udacity",
+    "subtitle" : "A blog with authentication.",
     "year" : 2017,
     "image" : "sonnenblog.png",
     "position" : "Backend Development",
     "technologies" : ["google app engine", "python", "ajax"],
-    "description" : "Get description",
+    "description" : "This is a multi user blog where users can sign in and post" +
+        " blog posts as well as 'Like' and 'Comment' on other posts made on the" +
+        " blog. It is hosted on Google App Engine and includes an authentication" +
+        " system for users to be able to register and sign in and then create blog" +
+        " posts!",
     "link" : "https://github.com/sonnenfeld269/multi-user-blog"
   },
   {
@@ -129,6 +135,20 @@ var projects = [
     "technologies" : ["wordpress", "css"],
     "description" : "A website about austrian war prisoners in turkestan.",
     "link" : "http://www.spurensuche-turkestan.org/"
+  },
+  {
+    "id" : 12,
+    "title" : "Item Catalog",
+    "subtitle" : "A web-app showing categories and items including " +
+        "crud-functionality and authentication.",
+    "year" : 2017,
+    "image" : "item_catalog.png",
+    "position" : "Front -and Backend Development",
+    "technologies" : ["html", "css", "python", "flask", "sqlite"],
+    "description" : "The Item Catalog provides a list of items within a " +
+        "variety of categories, as well as provide a user registration and " +
+        "authentication system.",
+    "link" : "https://github.com/sonnenfeld269/item-catalog"
   }
 
 ];
