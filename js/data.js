@@ -117,12 +117,18 @@ var projects = [
   {
     "id" : 10,
     "title" : "Tournament Results",
-    "subtitle" : "Get description from udacity",
+    "subtitle" : "Implementing a swiss tournament system using postgre-sql.",
     "year" : 2017,
     "image" : "tournament.png",
     "position" : "Backend Development",
     "technologies" : ["postgre-sql", "python"],
-    "description" : "Get description",
+    "description" : "A smarter tournament system in which players are paired " +
+        "with those of similar skill level and everyone competes in every " +
+        "round. More fair than an elimination bracket and more efficient than " +
+        "a round-robin tournament.<br><br>A PostgreSQL database stores match " +
+        "results, and a Python module queries the database to rank and pair " +
+        "players. When two players have the same win record, ties are broken " +
+        "by summing the win record of each player's previous opponents.",
     "link" : "https://github.com/sonnenfeld269/swiss-tournament-db"
   },
   {
