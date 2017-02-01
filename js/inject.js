@@ -45,7 +45,11 @@ function inject(htmlString) {
             resultString = resultString.replace("%position%", projects[index].position);
         }
         if (htmlString.includes("%technologies%")) {
-            resultString = resultString.replace("%technologies%", projects[index].technologies.join(", "));
+            techString = "";
+            for (tech in projects[index].technologies) {
+              techString += `<span class="label tech-label label-info">` + projects[index].technologies[tech] + `</span> `;
+            }
+            resultString = resultString.replace("%technologies%",techString);
         }
         if (htmlString.includes("%description%")) {
             resultString = resultString.replace("%description%", projects[index].description);
@@ -95,8 +99,7 @@ var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h2 class="modal-title title" id="myModalLabel">%title%
-                (%year%)</h2>
-                <h3 class="subtitle">%subtitle%</h3>
+                (%year%) <small class="subtitle"> %subtitle%</small></h2>
              </div>
              <div class="modal-body">
                 <div class="row">
@@ -104,20 +107,27 @@ var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
                       <img class="img-responsive" src="./images/projects/%image%">
                     </div>
                 </div>
-             <div class="row">
-                <div class="col-xs-12">
-                  <h3>%position%, Technologies: %technologies% </h3>
+                <div class="row">
+                  <div class="col-xs-12 vbottom">
+                    <span class="label tech-label label-warning">%position%</span>
+                    %technologies%
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>%description%</p>
+                  </div>
                 </div>
              </div>
-             <div class="row">
-                <div class="col-xs-12">
-                  <p>%description%</p>
+             <div class="modal-footer">
+                <div class="pull-left">
+                  <a target="_blank" href="%link%">
+                    <i class="fa fa-%icon%" aria-hidden="true"></i>
+                    %linkText%
+                  </a>
                 </div>
-             </div>
-             </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
-                </div>
+                <button type="button" class="btn btn-modal btn-md" data-dismiss="modal">Close</button>
+              </div>
             </div>
         </div>
     </div>
