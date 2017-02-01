@@ -77,10 +77,9 @@ function inject(htmlString) {
 
 // TODO insert a caption over the image
 
-var project = `<div class="project-tile col-xs-12 col-sm-4 col-lg-3">
-                  <img class="glow-img img-responsive"
-                  src="./images/projects/%image%" data-toggle="modal"
-                  data-target="#project%id%">
+var project = `<div class="project-tile col-xs-12 col-sm-4 col-lg-3" data-toggle="modal"
+               data-target="#project%id%">
+                  <img class="img-responsive" src="./images/projects/%image%">
                   <h3>%title% (%year%)</h3>
                   <p>
                     <a target="_blank" href="%link%"><i class="fa fa-%icon%"
@@ -99,7 +98,8 @@ var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h2 class="modal-title title" id="myModalLabel">%title%
-                (%year%) <small class="subtitle"> %subtitle%</small></h2>
+                (%year%)</h2>
+                <h3 class="subtitle">%subtitle%</h3>
              </div>
              <div class="modal-body">
                 <div class="row">
