@@ -1,3 +1,5 @@
+"use strict";
+
 /**
 * function : inject
 *   the function takes an html string and injects content from json into it by
@@ -16,8 +18,8 @@ function inject(htmlString) {
     var resultString = "";
 
     // sort projects by year
-    projects.sort(function(a, b) {
-        return b.year - a.year
+    projects.sort(function (a, b) {
+        return b.year - a.year;
     });
 
     for (index in projects) {
@@ -35,10 +37,10 @@ function inject(htmlString) {
             resultString = resultString.replace("%year%", projects[index].year);
         }
         if (htmlString.includes("%image%")) {
-            if(projects[index].image) {
-              resultString = resultString.replace("%image%", projects[index].image);
+            if (projects[index].image) {
+                resultString = resultString.replace("%image%", projects[index].image);
             } else {
-              resultString = resultString.replace("%image%", "placeholder.png");
+                resultString = resultString.replace("%image%", "placeholder.png");
             }
         }
         if (htmlString.includes("%position%")) {
@@ -47,9 +49,9 @@ function inject(htmlString) {
         if (htmlString.includes("%technologies%")) {
             techString = "";
             for (tech in projects[index].technologies) {
-              techString += `<span class="label tech-label label-info">` + projects[index].technologies[tech] + `</span> `;
+                techString += "<span class=\"label tech-label label-info\">" + projects[index].technologies[tech] + "</span> ";
             }
-            resultString = resultString.replace("%technologies%",techString);
+            resultString = resultString.replace("%technologies%", techString);
         }
         if (htmlString.includes("%description%")) {
             resultString = resultString.replace("%description%", projects[index].description);
@@ -77,66 +79,14 @@ function inject(htmlString) {
 
 // TODO insert a caption over the image
 
-var project = `<div class="project-tile col-xs-12 col-sm-4 col-lg-3" data-toggle="modal"
-               data-target="#project%id%">
-                  <img class="img-responsive" src="./images/projects/%image%">
-                  <h3>%title% (%year%)</h3>
-                  <p>
-                    <a target="_blank" href="%link%"><i class="fa fa-%icon%"
-                  aria-hidden="true"></i> %linkText%</a>
-                  </p>
-                </div>`;
+var project = "<div class=\"project-tile col-xs-12 col-sm-4 col-lg-3\" data-toggle=\"modal\"\n               data-target=\"#project%id%\">\n                  <img class=\"img-responsive\" src=\"./images/projects/%image%\">\n                  <h3>%title% (%year%)</h3>\n                  <p>\n                    <a target=\"_blank\" href=\"%link%\"><i class=\"fa fa-%icon%\"\n                  aria-hidden=\"true\"></i> %linkText%</a>\n                  </p>\n                </div>";
 
-var modal = `<div class="modal fade" id="project%id%" tabindex="-1"
-             role="dialog" aria-labelledby="myModalLabel">
-             <div class="container">
-             <div class="modal-dialog" role="document">
-             <div class="modal-content">
-             <div class="modal-header">
-                <button type="button" class="close custom-close"
-                data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h2 class="modal-title title" id="myModalLabel">%title%
-                (%year%)</h2>
-                <h3 class="subtitle">%subtitle%</h3>
-             </div>
-             <div class="modal-body">
-                <div class="row">
-                    <div class="col-xs-12">
-                      <img class="img-responsive" src="./images/projects/%image%">
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12 vbottom">
-                    <span class="label tech-label label-warning">%position%</span>
-                    %technologies%
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p>%description%</p>
-                  </div>
-                </div>
-             </div>
-             <div class="modal-footer">
-                <div class="pull-left">
-                  <a target="_blank" href="%link%">
-                    <i class="fa fa-%icon%" aria-hidden="true"></i>
-                    %linkText%
-                  </a>
-                </div>
-                <button type="button" class="btn btn-modal btn-md" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>`;
+var modal = "<div class=\"modal fade\" id=\"project%id%\" tabindex=\"-1\"\n             role=\"dialog\" aria-labelledby=\"myModalLabel\">\n             <div class=\"container\">\n             <div class=\"modal-dialog\" role=\"document\">\n             <div class=\"modal-content\">\n             <div class=\"modal-header\">\n                <button type=\"button\" class=\"close custom-close\"\n                data-dismiss=\"modal\" aria-label=\"Close\">\n                  <span aria-hidden=\"true\">&times;</span>\n                </button>\n                <h2 class=\"modal-title title\" id=\"myModalLabel\">%title%\n                (%year%)</h2>\n                <h3 class=\"subtitle\">%subtitle%</h3>\n             </div>\n             <div class=\"modal-body\">\n                <div class=\"row\">\n                    <div class=\"col-xs-12\">\n                      <img class=\"img-responsive\" src=\"./images/projects/%image%\">\n                    </div>\n                </div>\n                <div class=\"row\">\n                  <div class=\"col-xs-12 vbottom\">\n                    <span class=\"label tech-label label-warning\">%position%</span>\n                    %technologies%\n                  </div>\n                </div>\n                <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                    <p>%description%</p>\n                  </div>\n                </div>\n             </div>\n             <div class=\"modal-footer\">\n                <div class=\"pull-left\">\n                  <a target=\"_blank\" href=\"%link%\">\n                    <i class=\"fa fa-%icon%\" aria-hidden=\"true\"></i>\n                    %linkText%\n                  </a>\n                </div>\n                <button type=\"button\" class=\"btn btn-modal btn-md\" data-dismiss=\"modal\">Close</button>\n              </div>\n            </div>\n        </div>\n    </div>\n</div>";
 
 /**
 * the html tag will be selected and the formatted content will be appended to them.
 */
-$(document).ready(function() {
+$(document).ready(function () {
     $(".projectview").append(inject(project));
     $(".modalview").append(inject(modal));
 });
