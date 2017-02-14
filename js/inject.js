@@ -16,6 +16,7 @@ function inject(htmlString) {
 
     var resultArray = [];
     var resultString = "";
+    var index = 0;
 
     // sort projects by year
     projects.sort(function (a, b) {
@@ -47,7 +48,8 @@ function inject(htmlString) {
             resultString = resultString.replace("%position%", projects[index].position);
         }
         if (htmlString.includes("%technologies%")) {
-            techString = "";
+            var techString = "";
+            var tech = 0;
             for (tech in projects[index].technologies) {
                 techString += "<span class=\"label tech-label label-info\">" + projects[index].technologies[tech] + "</span> ";
             }
