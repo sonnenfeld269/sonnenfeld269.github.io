@@ -14,7 +14,11 @@ $(document).ready(function() {
     });
 
     // making a typed animation
-    $(".typed").typed({stringsElement: $('#typed-strings'), typeSpeed: 70});
+    $(".typed").typed({
+      stringsElement: $('#typed-strings'),
+      loop: true, 
+      typeSpeed: 70
+    });
 
     // animate skill bar
     $('.skillbar').each(function() {
