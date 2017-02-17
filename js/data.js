@@ -22,7 +22,7 @@ var projects = [
     "position" : "Frontend Development",
     "technologies" : ["html", "css", "angular-js"],
     "description" : "This is a database that I created for a " +
-                    "museum with Angular JS. It has two tables filled with " +
+                    "museum with AngularJS. It has two tables filled with " +
                     "json data, and different filters for sorting.",
     "link" : "https://github.com/sonnenfeld269/museum-web-app.git"
   },
@@ -59,7 +59,8 @@ var projects = [
     "position" : "Front -and Backend Development",
     "technologies" : ["html", "css", "pimcore-cms"],
     "description" : "An information webpage of an austrian marketing company " +
-                    "showing their products and services.",
+                    "showing their products and services. Here I used pimcore " +
+                    "cms to make it possible for users to add dynamic content.",
     "link" : "http://www.methmedia.at"
   },
   {
@@ -96,7 +97,8 @@ var projects = [
     "technologies" : ["html5", "css3", "javascript", "jquery"],
     "description" : "Developed a personal portfolio page using HTML, CSS, and" +
         " the Bootstrap framework. The page is fully responsive and" +
-        " works on mobile, tablet, and desktop browsers.",
+        " works on mobile, tablet, and desktop browsers. I also used my own " +
+        " inject.js file to load the projects into the html file.",
     "link" : "https://sonnenfeld269.github.io/"
   },
   {
@@ -111,7 +113,7 @@ var projects = [
         " blog posts as well as 'Like' and 'Comment' on other posts made on the" +
         " blog. It is hosted on Google App Engine and includes an authentication" +
         " system for users to be able to register and sign in and then create blog" +
-        " posts!",
+        " posts! I used hashing and salt to store passwords in a secure way.",
     "link" : "https://github.com/sonnenfeld269/multi-user-blog"
   },
   {
@@ -139,7 +141,9 @@ var projects = [
     "image" : "turkestan.png",
     "position" : "Backend Development",
     "technologies" : ["wordpress", "css"],
-    "description" : "A website about austrian war prisoners in turkestan.",
+    "description" : "This is a website that I created for the project " +
+        "\"Spurensuche Turkestan\". Here I used just wordpress with some " +
+        "plugins for showing tables using json data and an event calendar.",
     "link" : "http://www.spurensuche-turkestan.org/"
   },
   {
