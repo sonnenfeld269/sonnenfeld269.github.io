@@ -68,7 +68,7 @@ function inject(htmlString) {
             }
         }
         if (htmlString.indexOf("%icon%") >= 0) {
-            if (projects[index].link.indexOf("github")) {
+            if (projects[index].link.indexOf("github") >= 0) {
                 resultString = resultString.replace("%icon%", "github");
             } else {
                 resultString = resultString.replace("%icon%", "desktop");
