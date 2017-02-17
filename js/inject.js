@@ -25,29 +25,29 @@ function inject(htmlString) {
 
     for (index in projects) {
 
-        if (htmlString.includes("%id%")) {
+        if (htmlString.indexOf("%id%") >= 0) {
             resultString = htmlString.replace("%id%", projects[index].id);
         }
-        if (htmlString.includes("%title%")) {
+        if (htmlString.indexOf("%title%") >= 0) {
             resultString = resultString.replace("%title%", projects[index].title);
         }
-        if (htmlString.includes("%subtitle%")) {
+        if (htmlString.indexOf("%subtitle%") >= 0) {
             resultString = resultString.replace("%subtitle%", projects[index].subtitle);
         }
-        if (htmlString.includes("%year%")) {
+        if (htmlString.indexOf("%year%") >= 0) {
             resultString = resultString.replace("%year%", projects[index].year);
         }
-        if (htmlString.includes("%image%")) {
+        if (htmlString.indexOf("%image%") >= 0) {
             if (projects[index].image) {
                 resultString = resultString.replace("%image%", projects[index].image);
             } else {
                 resultString = resultString.replace("%image%", "placeholder.png");
             }
         }
-        if (htmlString.includes("%position%")) {
+        if (htmlString.indexOf("%position%") >= 0) {
             resultString = resultString.replace("%position%", projects[index].position);
         }
-        if (htmlString.includes("%technologies%")) {
+        if (htmlString.indexOf("%technologies%") >= 0) {
             var techString = "";
             var tech = 0;
             for (tech in projects[index].technologies) {
@@ -55,10 +55,10 @@ function inject(htmlString) {
             }
             resultString = resultString.replace("%technologies%", techString);
         }
-        if (htmlString.includes("%description%")) {
+        if (htmlString.indexOf("%description%") >= 0) {
             resultString = resultString.replace("%description%", projects[index].description);
         }
-        if (htmlString.includes("%link%")) {
+        if (htmlString.indexOf("%link%") >= 0) {
             if (projects[index].link) {
                 resultString = resultString.replace("%link%", projects[index].link);
                 resultString = resultString.replace("%linkText%", "Link to project");
@@ -67,8 +67,8 @@ function inject(htmlString) {
                 resultString = resultString.replace("%linkText%", "No link available");
             }
         }
-        if (htmlString.includes("%icon%")) {
-            if (projects[index].link.includes("github")) {
+        if (htmlString.indexOf("%icon%") >= 0) {
+            if (projects[index].link.indexOf("github")) {
                 resultString = resultString.replace("%icon%", "github");
             } else {
                 resultString = resultString.replace("%icon%", "desktop");
