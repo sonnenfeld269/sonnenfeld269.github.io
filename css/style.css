@@ -55,7 +55,9 @@
 
 @font-face {
     font-family: "Open Sans Condensed";
-    src: url('./fonts/Open Sans Condensed/OpenSans-CondLight.ttf') format('truetype');
+    src: url('./fonts/Open Sans Condensed/OpenSans-CondLight.ttf') format('truetype'),
+         url('./fonts/Open Sans Condensed/OpenSans-CondLight-webfont.eot'),
+         url('./fonts/Open Sans Condensed/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype');
 }
 
 body {
@@ -161,6 +163,11 @@ img, video, embed, object {
 
 
 /* using css flex to align div inside .cover vertically */
+/* this cover wrapper is needed to support IE */
+.cover-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 .cover {
     display: flex;
