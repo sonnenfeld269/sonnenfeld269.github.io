@@ -26,11 +26,11 @@
         font-size: 25px !important;
     }
     .quote {
-      max-width: 100% !important;
+        max-width: 100% !important;
     }
     section#about-me .profile-image {
-      max-width: 180px;
-      margin: 0 auto 20px auto;
+        max-width: 180px;
+        margin: 0 auto 20px auto;
     }
 }
 
@@ -234,7 +234,9 @@ section#about-me {
     background: azure;
 }
 
-
+.profile-image {
+    border-radius: 50%;
+}
 
 
 /*** SKILL BAR ***/
@@ -265,7 +267,6 @@ section#about-me {
     position: absolute;
     top: 0;
     left: 0;
-    width: 110px;
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
@@ -363,6 +364,7 @@ footer .footer-below {
 .modal-body .row {
     padding: 10px 0px;
 }
+
 .custom-close {
     font-size: 50px;
     opacity: 0.7;
@@ -391,6 +393,7 @@ footer .footer-below {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 
 /* TYPING */
 
