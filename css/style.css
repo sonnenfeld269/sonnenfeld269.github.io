@@ -237,12 +237,23 @@ blockquote {
     box-shadow: 0 0 15px 0 #bbd3ff;
 }
 
-section#about-me {
+section#about-me,
+section#interests {
     background: azure;
 }
 
 .profile-image {
     border-radius: 50%;
+}
+
+section#interests .interest-image {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+section#interests .well p {
+  padding: 0 0 0 10px;
 }
 
 
@@ -324,12 +335,12 @@ section#about-me {
 /** FOOTER **/
 
 footer .footer-above {
-    background-color: azure;
+    background-color: white;
 }
 
 footer .footer-below {
     padding: 15px 0;
-    background-color: #fff;
+    background-color: azure;
 }
 
 .btn-social {

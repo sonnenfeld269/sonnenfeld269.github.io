@@ -159,6 +159,16 @@ var projects = [
         "variety of categories, as well as provide a user registration and " +
         "authentication system.",
     "link" : "https://github.com/sonnenfeld269/item-catalog"
-  }
-
+  },
+  {
+    "id" : 13,
+    "title" : "Fragnebenan Street Pages",
+    "subtitle" : "Turning some mockups into static fronted pages with React.",
+    "year" : 2017,
+    "image" : "fragnebenan_streets.png",
+    "position" : "Frontend Development",
+    "technologies" : ["html", "css", "react-js"],
+    "description" : "Creating wonderful street pages for a neighbourhood platform Fragnebenan!",
+    "link" : "https://www.fragnebenan.com"
+  },
 ];
