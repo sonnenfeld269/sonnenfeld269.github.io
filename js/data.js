@@ -169,6 +169,6 @@ var projects = [
     "position" : "Frontend Development",
     "technologies" : ["html", "css", "react-js"],
     "description" : "Creating wonderful street pages for a neighbourhood platform Fragnebenan!",
-    "link" : "https://www.fragnebenan.com"
+    "link" : "https://s.fragnebenan.at/c"
   },
 ];
