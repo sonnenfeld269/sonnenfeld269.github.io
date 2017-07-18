@@ -166,9 +166,9 @@ var projects = [
     "subtitle" : "Turning some mockups into static fronted pages with React.",
     "year" : 2017,
     "image" : "fragnebenan_streets.png",
-    "position" : "Frontend Development",
-    "technologies" : ["html", "css", "react-js"],
-    "description" : "Creating wonderful street pages for a neighbourhood platform Fragnebenan!",
-    "link" : "https://s.fragnebenan.at/c"
+    "position" : "Full Stack Development",
+    "technologies" : ["html", "css", "react-js", "node-js", "mongodb", "seo"],
+    "description" : "Creating wonderful street pages for a neighbourhood platform Fragnebenan! With seo using json-lds based on the schema.org standard. This project also includes components that gets data with promises from a drupal live system.",
+    "link" : "https://fragnebenan.com/s/marxergasse-1030-wien"
   },
 ];
