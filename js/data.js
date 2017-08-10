@@ -171,4 +171,15 @@ var projects = [
     "description" : "Creating wonderful street pages for a neighbourhood platform Fragnebenan! With seo using json-lds based on the schema.org standard. This project also includes components that gets data with promises from a drupal live system.",
     "link" : "https://fragnebenan.com/s/marxergasse-1030-wien"
   },
+  {
+    "id" : 14,
+    "title" : "Human Connection",
+    "subtitle" : "Contributing to an open source social media and action platform.",
+    "year" : 2017,
+    "image" : "humanconnection.png",
+    "position" : "Frontend Development",
+    "technologies" : ["html", "css", "vue-js"],
+    "description" : "Implementation of different components and views. Including a map-component based on mapbox and open street map data.",
+    "link" : "https://humanconnection.org/"
+  }
 ];
