@@ -181,5 +181,16 @@ var projects = [
     "technologies" : ["html", "css", "vue-js"],
     "description" : "Implementation of different components and views. Including a map-component based on mapbox and open street map data.",
     "link" : "https://humanconnection.org/"
+  },
+  {
+    "id" : 15,
+    "title" : "Gärten für Alle!",
+    "subtitle" : "A garden community in vienna!",
+    "year" : 2018,
+    "image" : "gaerten_alle.png",
+    "position" : "Frontend Development",
+    "technologies" : ["html", "sass", "vue-js"],
+    "description" : "A frontend website for my gardening community using bulma framework and sass.",
+    "link" : "https://github.com/sonnenfeld269/gaertenfueralle"
   }
 ];
